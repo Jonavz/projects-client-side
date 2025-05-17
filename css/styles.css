@@ -1,0 +1,84 @@
+/*GENERAL*/
+body{
+    background-color: black;
+    font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+h2{
+    color: white;
+}
+p{
+    color: white;
+    
+}
+
+
+/*NAVBAR*/
+.navbar{
+    backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+}
+.logo {
+    color: white;
+    margin-right: 50px;
+    cursor: pointer;
+    font-family: "Lato", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 25px;
+}
+.list{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+.li{
+    position: relative;
+    cursor: pointer;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+.li::after{
+    position: absolute;
+    content: "";
+    inset: 0;
+    background: white;
+    scale: 1 0;
+    z-index: -1;
+    transition: 0.45s;
+    border-radius: 10px;
+}
+.li:hover{
+    color:black
+}
+.li:hover::after{
+    scale: 1 1;
+}
+
+/*SECTION: CARDS*/
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 15rem;
+    
+}
+.card{
+    border: 2px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    padding: 2em;
+    cursor: pointer;
+    transition: 0.40s;
+}
+.card:hover{
+    transform: scale(1.07);
+    box-shadow: 0px 0px 12px white ;
+    border-radius: 17px;
+}
